@@ -20,7 +20,7 @@ if [ $choice -eq 1 ] ; then
 	wget -N https://github.com/ArhangelAgrail/Bash-Script/raw/master/NadekoARN.sh 
 	cd "$root"
 	echo "Starting Nadeko in pm2 with auto-restart and no auto-update..."
-	sudo pm2 start "$root/NadekoARN.sh" --interpreter=bash --name=Nadeko
+	sudo pm2 start "$root/NadekoARN.sh" --interpreter=bash --name=Esprit
 	sudo pm2 startup
 	sudo pm2 save
 	echo ""
@@ -31,7 +31,7 @@ else
 		wget -N https://github.com/ArhangelAgrail/Bash-Script/raw/master/NadekoARU_Latest.sh 
 		cd "$root"
 		echo "Starting Nadeko in pm2 with auto-restart and auto-update..."
-		sudo pm2 start "$root/NadekoARU_Latest.sh" --interpreter=bash --name=Nadeko
+		sudo pm2 start "$root/NadekoARU_Latest.sh" --interpreter=bash --name=Esprit
 		sudo pm2 startup
 		sudo pm2 save
 		echo ""
@@ -42,7 +42,7 @@ else
 		wget -N https://github.com/ArhangelAgrail/Bash-Script/raw/master/nadeko_run.sh
 		cd "$root"
 		echo "Starting Nadeko in pm2 normally without any auto update or restart.."
-		sudo pm2 start "$root/nadeko_run.sh" --interpreter=bash --name=Nadeko
+		sudo pm2 start "$root/nadeko_run.sh" --interpreter=bash --name=Esprit
 		sudo pm2 startup
 		sudo pm2 save
 		echo ""
